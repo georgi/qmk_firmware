@@ -6,12 +6,12 @@ enum layers { BASE, NAV, SYM, NUM  };
 #define LAYOUT LAYOUT_split_3x6_3
 #define __ KC_NO
 #define CTL_A CTL_T(KC_A)
-#define ALT_S ALT_T(KC_S)
-#define ALT_L ALT_T(KC_L)
+#define CTL_SCLN CTL_T(KC_SCLN)
+#define SYM_S LT(SYM, KC_S)
+#define NUM_D LT(NUM, KC_D)
 #define NAV_F LT(NAV, KC_F)
-#define SYM_J LT(SYM, KC_J)
-#define NUM_K LT(NUM, KC_K)
-
+#define SWAP MAGIC_SWAP_LCTL_LGUI
+#define UNSWAP MAGIC_UNSWAP_LCTL_LGUI
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT(
