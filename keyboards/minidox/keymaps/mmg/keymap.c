@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [NAV] = LAYOUT(
     __ ,      __ ,     __ ,     __ ,     __ ,     KC_WWW_HOME, KC_WWW_BACK, KC_WWW_FORWARD, KC_WWW_FAVORITES,  __,
-    __ ,      __,      __ ,     __ ,     __ ,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_CAPSLOCK,
+    __ ,      __,      __ ,     __ ,     __ ,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_UNDS,
     __ ,      __ ,     __ ,     __ ,     __ ,     KC_HOME, KC_PGDN, KC_PGUP, KC_END,  RESET,
     KC_LALT, KC_LSFT,  KC_LGUI, KC_RGUI, KC_RSFT, KC_RALT
   ),
@@ -30,12 +30,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     __ ,     __ ,     __ ,     __ ,     __ ,       KC_TILD,  KC_AMPR, KC_ASTR, KC_PIPE, RALT(KC_Q),
     __ ,     __ ,     __ ,     __ ,     __ ,       KC_LPRN,  KC_DLR,  KC_PERC, KC_CIRC, KC_RPRN,
     __ ,     __ ,     __ ,     __ ,     __ ,       KC_LCBR,  KC_EXLM, KC_AT,   KC_HASH, KC_RCBR,
-    KC_LALT, KC_LSFT,  KC_LGUI, KC_DQT, KC_QUOT, KC_GRV
+    KC_LALT, KC_LSFT,  KC_LGUI, KC_DQT, KC_QUOT, __  
   ),
   [NUM] = LAYOUT(
-    __ ,      __ ,     __ ,     __,      __ ,      KC_EQL,   KC_7,    KC_8,    KC_9,    __,
+    __ ,      __ ,     __ ,     __,      __ ,      KC_EQL,   KC_7,    KC_8,    KC_9,    KC_GRV,
     __ ,      __,      __ ,     __,      __ ,      KC_LBRC,  KC_4,    KC_5,    KC_6,    KC_RBRC,
     __ ,     __ ,      __ ,     __,      __ ,      KC_0,     KC_1,    KC_2,    KC_3,    KC_BSLS,
-    KC_LALT, KC_LSFT,  KC_LGUI,  KC_MINS, KC_UNDS, KC_PLUS
+    KC_LALT, KC_LSFT,  KC_LGUI,  KC_MINS, KC_PLUS,  __ 
   ),
 };
