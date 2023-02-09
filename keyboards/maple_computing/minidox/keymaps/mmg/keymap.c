@@ -5,14 +5,18 @@
 
 #define LAYOUT LAYOUT_split_3x5_3
 #define __ KC_NO
-#define MOD_A CTL_T(KC_A)
-#define MOD_SCLN CTL_T(KC_SCLN)
+
+
+#define MOD_A GUI_T(KC_A)
+#define MOD_SCLN GUI_T(KC_SCLN)
 #define MOD_S ALT_T(KC_S)
 #define MOD_L ALT_T(KC_L)
-#define MOD_D SFT_T(KC_D)
-#define MOD_K SFT_T(KC_K)
-#define MOD_F GUI_T(KC_F)
-#define MOD_J GUI_T(KC_J)
+#define MOD_D CTL_T(KC_D)
+#define MOD_K CTL_T(KC_K)
+#define MOD_F SFT_T(KC_F)
+#define MOD_J SFT_T(KC_J)
+
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT(
