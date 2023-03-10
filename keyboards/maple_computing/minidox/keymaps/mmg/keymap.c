@@ -27,14 +27,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [NAV] = LAYOUT(
     KC_1,     KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
-    RESET,    __,      __,      KC_ESC,  __,      KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, __,
-    __ ,      __,      __,      __,      __,      __,      __,      __,      __,      __,
+    RESET,    __,      __,      __,      KC_ESC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, __,
+    __ ,      __,      __,      __,      __,      __,      KC_MINS, KC_EQL,  __,      __,
     __ , LT(SYM, KC_BSPC), KC_TAB, KC_ENT, LT(SYM, KC_SPC), __
   ),
   [SYM] = LAYOUT(
     KC_EXLM, KC_AT,   KC_HASH,  KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,
     KC_TILD, KC_GRV,  KC_LCBR,  KC_RCBR, KC_QUOT, KC_DQT,  KC_LBRC, KC_RBRC, KC_PIPE, KC_BSLS,
-    __,      __,      __,       __,      __,      KC_UNDS, KC_PLUS, KC_MINS, KC_EQL,  __,
+    __,      __,      __,       __,      __,      __,      KC_UNDS, KC_PLUS,   __,    __,
     __,  KC_BSPC, LT(NAV, KC_TAB), LT(NAV, KC_ENT), KC_SPC, __
   ),
 };
