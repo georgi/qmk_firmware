@@ -1,7 +1,19 @@
 {
-    "keyboard_name": "bounce75soldered",
+    "keyboard_name": "Bounce75 Soldered",
+    "manufacturer": "KBDfans",
     "url": "",
     "maintainer": "moyi4681",
+    "usb": {
+        "vid": "0x4B42",
+        "pid": "0x7000",
+        "device_version": "0.0.3"
+    },
+    "indicators": {
+        "caps_lock": "C6",
+        "on_state": 0
+    },
+    "processor": "atmega32u4",
+    "bootloader": "atmel-dfu",
     "layouts": {
         "LAYOUT_all": {
             "layout": [
