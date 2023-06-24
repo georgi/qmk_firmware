@@ -1,6 +1,5 @@
 #include "keymap.h"
 #include "print.h"
-#include "keymap_german.h"
 
 
 #define LAYOUT LAYOUT_split_3x5_3
@@ -27,14 +26,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [NAV] = LAYOUT(
     KC_1,     KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
-    RESET,    __,      __,      __,      KC_ESC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, __,
-    __ ,      __,      __,      __,      __,      __,      KC_MINS, KC_EQL,  __,      __,
+    KC_ESC,  KC_HOME, KC_PGUP, KC_PGDN, KC_END,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_ESC,
+    KC_CAPS, __,      __,      __,      QK_BOOT,  __,      __,      __,      __,      KC_CAPS,
     __ , LT(SYM, KC_BSPC), KC_TAB, KC_ENT, LT(SYM, KC_SPC), __
   ),
   [SYM] = LAYOUT(
     KC_EXLM, KC_AT,   KC_HASH,  KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,
     KC_TILD, KC_GRV,  KC_LCBR,  KC_RCBR, KC_QUOT, KC_DQT,  KC_LBRC, KC_RBRC, KC_PIPE, KC_BSLS,
-    __,      __,      __,       __,      __,      __,      KC_UNDS, KC_PLUS,   __,    __,
+    __,      __,      __,       __,      __,      KC_UNDS, KC_MINS, KC_PLUS,   KC_EQL,    __,
     __,  KC_BSPC, LT(NAV, KC_TAB), LT(NAV, KC_ENT), KC_SPC, __
   ),
 };
