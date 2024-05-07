@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [NAV] = LAYOUT(
     __ , __ ,      __ ,     __ ,     __ ,     __ ,                 KC_WWW_HOME, KC_WWW_BACK, KC_WWW_FORWARD, KC_WWW_FAVORITES,  SWAP, __,
-    __ , __ ,      __,      __ ,     __ ,     __ ,                 KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_CAPSLOCK, __,
+    __ , __ ,      __,      __ ,     __ ,     __ ,                 KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, __, __,
     __ , __ ,      __ ,     __ ,     __ ,     __ ,   __,__,__,__,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  __, __,
     __ , KC_LALT, KC_LSFT,  KC_LGUI,  __, __,   KC_RGUI, KC_RSFT, KC_RALT, __
   ),
